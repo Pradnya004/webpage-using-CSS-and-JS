@@ -4,20 +4,23 @@
         <link rel= "stylesheet" type="text/css" href="styling.css">
         <title> Good Food</title>
         <script>
-           function  myFunction()
+            function login()
             {
-                console.log('clicked login');
-                return null;
+                var name= document.getElementById("username").value;
+                console.log("hello" + name);
+                
             }
 
-            function myFunctions()
+            function cancel()
             {
                 console.log('clicked cancel');
-                return null;
+               
             }
+
         </script>
     </head>
     <body>
+        
     
         <div class= "split left">
             <div class="top">
@@ -27,13 +30,13 @@
                 <br/>   
                 <P>
                     User Name:
-                    <input type ="text" value="Enter your Username"/>
+                    <input type ="text" value="Enter your Username" id="username"/>
                      <br/>
                     Password:
                     <input type="password"/>
                     <br/>
-                    <button type="button"  onclick="myFunction()">Login </button>
-                    <button type="button"  onclick="myFunctions()">cancel </button>
+                    <button type="button"  onclick="login()">Login </button>
+                    <button type="button"  onclick="cancel()">cancel </button>
 
                 </P>
 

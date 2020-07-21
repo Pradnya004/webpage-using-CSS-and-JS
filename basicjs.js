@@ -1,4 +1,5 @@
-function myFunction(){
+function login(event){
+    
     console.log('clicked login');
 }
 
